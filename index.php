@@ -1,10 +1,11 @@
 <?php
 include_once './assets/include/head.php';
+require_once './assets/include/components/component.php';
+
 ?>
 
 
-
-<div id="app">
+<div>
 
 
   <?php
@@ -12,26 +13,8 @@ include_once './assets/include/head.php';
   ?>
 
 
-  <button @click="inc"> {{counter}} </button>
+
 
 </div>
-
-<script>
-  const pageConfig = {
-    data() {
-      return {
-        counter: 0
-      }
-    },
-    methods: {
-      inc() {
-        ++this.counter
-      }
-    }
-  }
-
-  Vue.createApp(pageConfig).mount('#app')
-</script>
-
 
 <?php include_once './assets/include/footer.php' ?>

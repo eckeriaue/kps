@@ -4,6 +4,7 @@ module.exports = {
     './index.php',
     './**/*.{php,js}',
     './**/**/*.{php,js}',
+    './**/**/**/*.{php,js}',
   ],
   theme: {
     extend: {
