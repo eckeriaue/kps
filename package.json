@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "tw-watch": "npx tailwindcss -i ./assets/css/input.css -o ./assets/index.css --watch"
+    "tw-watch": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/index.css --watch"
   },
   "devDependencies": {
     "tailwind": "^4.0.0"

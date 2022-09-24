@@ -1,17 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include_once './assets/include/head.php';
+?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
 
-  <script src="https://unpkg.com/vue@next"></script>
-</head>
 
-<body>
+<div id="app">
 
-</body>
 
-</html>
+  <?php
+  include_once './assets/include/header.php';
+  ?>
+
+
+  <button @click="inc"> {{counter}} </button>
+
+</div>
+
+<script>
+  const pageConfig = {
+    data() {
+      return {
+        counter: 0
+      }
+    },
+    methods: {
+      inc() {
+        ++this.counter
+      }
+    }
+  }
+
+  Vue.createApp(pageConfig).mount('#app')
+</script>
+
+
+<?php include_once './assets/include/footer.php' ?>

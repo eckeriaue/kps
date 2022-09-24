@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.php', './**/*.{php,js}'],
+  content: [
+    './index.php',
+    './**/*.{php,js}',
+    './**/**/*.{php,js}',
+  ],
   theme: {
     extend: {
       spacing: {
