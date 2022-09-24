@@ -644,6 +644,16 @@ video {
        column-gap: 36px;
 }
 
+.gap-x-4{
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.gap-x-2{
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+
 .truncate{
   overflow: hidden;
   text-overflow: ellipsis;
@@ -656,6 +666,10 @@ video {
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.border{
+  border-width: 1px;
 }
 
 .bg-\[color\:var\(--blue-2\)\]{
