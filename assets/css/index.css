@@ -672,6 +672,10 @@ video {
   border-width: 1px;
 }
 
+.border-\[color\:var\(--blue-2\)\]{
+  border-color: var(--blue-2);
+}
+
 .bg-\[color\:var\(--blue-2\)\]{
   background-color: var(--blue-2);
 }
@@ -748,6 +752,10 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[color\:var\(--dark\)\]{
+  color: var(--dark);
 }
 
 .underline{
