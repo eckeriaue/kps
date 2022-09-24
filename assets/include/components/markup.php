@@ -14,16 +14,25 @@ class Markup
     return <<<"HTML"
       <button
         class="
-          {$id} text-4xl {$this->modes['btn'][$mode]}
-          text-center
-          {$setPadding}
+          {$id} {$setPadding} {$this->modes['btn'][$mode]}
+          text-4xl text-center rounded-full
           active:scale-95 transition-transform
-          rounded-full
           text-[14px] font-bold leading-[17px]
          "
       >
         $text
       </button>
+    HTML;
+  }
+
+  public function heading($text, $level = 'h3')
+  {
+    return <<<"HTML"
+
+    <{$level} class="text-[color:var(--dark)] text-4xl font-black leading-[110%]">
+       $text
+    </{$level}>
+
     HTML;
   }
 };

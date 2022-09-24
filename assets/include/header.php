@@ -20,7 +20,7 @@
       <ul class="flex items-center h-full gap-x-14">
         <?php for ($i = 0; $i < count($menu); $i++) : ?>
           <li>
-            <a href="#">
+            <a href="#" class="hover:text-[color:var(--blue-2)] transition-colors h-full block">
               <?= $menu[$i] ?>
             </a>
           </li>

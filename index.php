@@ -1,6 +1,6 @@
 <?php
 include_once './assets/include/head.php';
-require_once './assets/include/components/component.php';
+require_once './assets/include/components/markup.php';
 $markup = new Markup();
 ?>
 
@@ -11,6 +11,12 @@ $markup = new Markup();
   <?php
   include_once './assets/include/header.php';
   ?>
+
+  <main>
+    <section>
+      <div class="container"></div>
+    </section>
+  </main>
 
 
 

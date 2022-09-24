@@ -10,7 +10,7 @@
 }
 
 .container * {
-  @apply outline-dashed outline-orange-800;
+  @apply outline outline-1 outline-orange-800;
 }
 .container {
   @apply max-w-[calc(1128px+16px)] mx-auto px-2;
