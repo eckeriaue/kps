@@ -9,7 +9,7 @@ class Markup
       "border" => 'border border-[color:var(--blue-2)] text-[color:var(--dark )]'
     ],
   ];
-  public function btn($text, $id = '',  $mode = 'fill', $setPadding = 'px-8 py-6')
+  public function btn($text, $mode = 'fill', $id = '',  $setPadding = 'px-8 h-[56px]')
   {
     return <<<"HTML"
       <button

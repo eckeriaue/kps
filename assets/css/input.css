@@ -9,9 +9,9 @@
   --blue-2: #1860cf;
 }
 
-.container * {
+/* body * {
   @apply outline outline-1 outline-orange-800;
-}
+} */
 .container {
-  @apply max-w-[calc(1128px+16px)] mx-auto px-2;
+  @apply font-['inter'] max-w-[calc(1128px+16px)] mx-auto px-2;
 }

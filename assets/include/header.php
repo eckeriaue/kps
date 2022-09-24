@@ -1,4 +1,4 @@
-<header class="container">
+<header class="container mt-4">
 
 
   <menu class="flex justify-between">
@@ -39,7 +39,7 @@
       </span>
       <a href="#"><img src="./assets/img/social/whatsapp.svg" alt="whatsapp"></a>
       <a href="#"><img src="./assets/img/social/telegram.svg" alt="telegram"></a>
-      <?= $markup->btn('Оставить заявку', 'open-modal-window'); ?>
+      <?= $markup->btn('Оставить заявку', 'fill', 'open-modal-window'); ?>
     </div>
 
   </menu>
