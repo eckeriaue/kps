@@ -12,6 +12,8 @@
       outline: 1px solid red;
     }
   </style> -->
+  <script defer src="./assets/js/index.js"></script>
+
 </head>
 
 <body class="overflow-hiiden">
@@ -29,12 +31,13 @@
         </a>
       </div>
 
-      <div class="xl:translate-x-full xl:z-10 xl:fixed xl:overflow-hidden xl:top-o xl:right-0 xl:shadow-lg xl:bg-white xl:h-full xl:w-1/3 xl:p-12 xl:-mt-4 xl:transition-transform">
+      <div id="mobile-menu" class="xl:translate-x-full xl:z-10 xl:fixed xl:overflow-hidden xl:top-o xl:right-0 xl:shadow-lg xl:bg-white xl:h-full xl:w-1/3 lg:w-1/2 md:w-2/3 xl:p-12 xl:-mt-4 xl:transition-transform">
         <?php
         $menu = [
           'Главная', 'Каталог', 'Партнерство', 'Контакты'
         ]
         ?>
+        <span class="open-window text-xl cursor-pointer"> &times; </span>
         <ul class="flex items-center h-full xl:flex-col xl:gap-y-10 gap-x-14">
           <?php for ($i = 0; $i < count($menu); $i++) : ?>
             <li>
@@ -78,7 +81,7 @@
           Оставить заявку
         </button>
 
-        <button class="hidden xl:block w-6 h-6">
+        <button class="open-window hidden xl:block w-6 h-6">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
@@ -400,7 +403,6 @@
 
 
   </main>
-
 
 </body>
 
