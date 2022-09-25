@@ -32,20 +32,33 @@
       </div>
 
       <div id="mobile-menu" class="xl:translate-x-full xl:z-10 xl:fixed xl:overflow-hidden xl:top-o xl:right-0 xl:shadow-lg xl:bg-white xl:h-full xl:w-1/3 lg:w-1/2 md:w-2/3 xl:p-12 xl:-mt-4 xl:transition-transform">
-        <?php
-        $menu = [
-          'Главная', 'Каталог', 'Партнерство', 'Контакты'
-        ];
-        ?>
         <span class="open-window text-xl cursor-pointer hidden xl:block"> &times; </span>
         <ul class="flex items-center h-full xl:flex-col xl:gap-y-10 gap-x-14">
-          <?php for ($i = 0; $i < count($menu); $i++) : ?>
-            <li>
-              <a href="#" class="hover:text-[color:var(--blue-2)] transition-colors h-full block">
-                <?= $menu[$i] ?>
-              </a>
-            </li>
-          <?php endfor; ?>
+
+
+
+          <li>
+            <a href="#" class="hover:text-[color:var(--blue-2)] transition-colors h-full block">
+              Главная
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[color:var(--blue-2)] transition-colors h-full block">
+              Каталог
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[color:var(--blue-2)] transition-colors h-full block">
+              Партнерство
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[color:var(--blue-2)] transition-colors h-full block">
+              Контакты
+            </a>
+          </li>
+
+
         </ul>
 
         <div class="hidden lg:flex lg:-mt-12 lg:gap-x-4 lg:justify-end">
@@ -162,26 +175,39 @@
     <section class="mt-[64px] bg-[color:var(--blue)] rounded-t-[56px]  pt-80 pb-[calc(48px+56px)]">
       <div class="container flex flex-wrap gap-y-[24px] gap-x-[26px] justify-center">
 
-        <?php
-        $about_blocks = [
-          ['img' => './assets/img/about/icon-1.svg', 'text' => "Индивидуальный подход по оплате к каждому в части покупки-продажи запчастей"],
-          ['img' => './assets/img/about/icon-2.svg', 'text' => "Складирование и хранение товара на нашем складе "],
-          ['img' => './assets/img/about/icon-3.svg', 'text' => "Доставим до объекта на нашем транспорте"],
-          ['img' => './assets/img/about/icon-4.svg', 'text' => "Для постоянных клиентов — действуют скидки"],
-          ['img' => './assets/img/about/icon-5.svg', 'text' => "Гарантия оригинальности запчастей (сертификаты и паспорта качества)"],
-        ];
 
-        for ($i = 0; $i < count($about_blocks); $i++) :
-        ?>
 
-          <div class="border-4 group hover:scale-105 transition-transform border-white p-8 rounded-[24px] flex flex-col justify-between">
-            <div> <img src="<?= $about_blocks[$i]['img'] ?>" alt="<?= $about_blocks[$i]['img'] ?>"> </div>
-            <p class="max-w-[272px] text-white text-[16px] leading-[100%] ">
-              <?= $about_blocks[$i]['text'] ?>
-            </p>
-          </div>
+        <div class="border-4 group hover:scale-105 transition-transform border-white p-8 rounded-[24px] flex flex-col justify-between">
+          <div> <img src="./assets/img/about/icon-1.svg" alt="icon-1"> </div>
+          <p class="max-w-[272px] text-white text-[16px] leading-[100%] ">
+            Индивидуальный подход по оплате к каждому в части покупки-продажи запчастей
+          </p>
+        </div>
+        <div class="border-4 group hover:scale-105 transition-transform border-white p-8 rounded-[24px] flex flex-col justify-between">
+          <div> <img src="./assets/img/about/icon-2.svg" alt="icon-1"> </div>
+          <p class="max-w-[272px] text-white text-[16px] leading-[100%] ">
+            Складирование и хранение товара на нашем складе
+          </p>
+        </div>
+        <div class="border-4 group hover:scale-105 transition-transform border-white p-8 rounded-[24px] flex flex-col justify-between">
+          <div> <img src="./assets/img/about/icon-3.svg" alt="icon-1"> </div>
+          <p class="max-w-[272px] text-white text-[16px] leading-[100%] ">
+            Доставим до объекта на нашем транспорте
+          </p>
+        </div>
+        <div class="border-4 group hover:scale-105 transition-transform border-white p-8 rounded-[24px] flex flex-col justify-between">
+          <div> <img src="./assets/img/about/icon-4.svg" alt="icon-1"> </div>
+          <p class="max-w-[272px] text-white text-[16px] leading-[100%] ">
+            Для постоянных клиентов — действуют скидки
+          </p>
+        </div>
+        <div class="border-4 group hover:scale-105 transition-transform border-white p-8 rounded-[24px] flex flex-col justify-between">
+          <div> <img src="./assets/img/about/icon-5.svg" alt="icon-1"> </div>
+          <p class="max-w-[272px] text-white text-[16px] leading-[100%] ">
+            Гарантия оригинальности запчастей (сертификаты и паспорта качества)
+          </p>
+        </div>
 
-        <?php endfor; ?>
 
       </div>
     </section>
@@ -243,28 +269,44 @@
 
 
         <div class="grid grid-cols-3 gap-x-8 justify-center xl:grid-cols-1 xl:grid-rows-3 xl:gap-x-0 xl:gap-y-8">
-          <?php
-          $catalog_layout = [
-            ['img' => './assets/img/main/catalog/catalog-main-page-1.png', 'title' => 'Запчасти на грузовые вагоны'],
-            ['img' => './assets/img/main/catalog/catalog-main-page-2.png', 'title' => 'Запчасти на локомотивы '],
-            ['img' => './assets/img/main/catalog/catalog-main-page-3.png', 'title' => 'Услуги (логистика, хранение)'],
-          ];
 
-          for ($i = 0; $i < count($catalog_layout); $i++) : ?>
 
-            <div class="border-2 border-[color:var(--blue-2)] flex flex-col justify-between gap-y-3 rounded-[24px] p-8">
+          <div class="border-2 border-[color:var(--blue-2)] flex flex-col justify-between gap-y-3 rounded-[24px] p-8">
 
-              <div class="w-[222px] mx-auto">
-                <img class="w-full" src="<?= $catalog_layout[$i]['img'] ?>" alt="<?= $catalog_layout[$i]['img'] ?>">
-              </div>
-
-              <p class="text-center font-semibold text-[18px] leading-[100%] text-[color:var(--dark)]"> <?= $catalog_layout[$i]['title'] ?> </p>
-
-              <button class="w-full text-center border border-[color:var(--blue-2)] py-2 rounded-full text-[14px]"> Подробнее </button>
-
+            <div class="w-[222px] mx-auto">
+              <img class="w-full" src="./assets/img/main/catalog/catalog-main-page-1.png" alt="catalog-main-page-1">
             </div>
 
-          <?php endfor; ?>
+            <p class="text-center font-semibold text-[18px] leading-[100%] text-[color:var(--dark)]"> Запчасти на грузовые вагоны </p>
+
+            <button class="w-full text-center border border-[color:var(--blue-2)] py-2 rounded-full text-[14px]"> Подробнее </button>
+
+          </div>
+
+          <div class="border-2 border-[color:var(--blue-2)] flex flex-col justify-between gap-y-3 rounded-[24px] p-8">
+
+            <div class="w-[222px] mx-auto">
+              <img class="w-full" src="./assets/img/main/catalog/catalog-main-page-2.png" alt="catalog-main-page-1">
+            </div>
+
+            <p class="text-center font-semibold text-[18px] leading-[100%] text-[color:var(--dark)]"> Запчасти на локомотивы </p>
+
+            <button class="w-full text-center border border-[color:var(--blue-2)] py-2 rounded-full text-[14px]"> Подробнее </button>
+
+          </div>
+
+          <div class="border-2 border-[color:var(--blue-2)] flex flex-col justify-between gap-y-3 rounded-[24px] p-8">
+
+            <div class="w-[222px] mx-auto">
+              <img class="w-full" src="./assets/img/main/catalog/catalog-main-page-3.png" alt="catalog-main-page-1">
+            </div>
+
+            <p class="text-center font-semibold text-[18px] leading-[100%] text-[color:var(--dark)]"> Услуги (логистика, хранение) </p>
+
+            <button class="w-full text-center border border-[color:var(--blue-2)] py-2 rounded-full text-[14px]"> Подробнее </button>
+
+          </div>
+
         </div>
 
       </div>
@@ -277,28 +319,83 @@
         <div class="grid grid-cols-3 grid-rows-2 gap-8 lg:grid-cols-1 lg:grid-rows-6">
           <h3 class="heading xl:text-center"> Реализованные запчасти </h3>
 
-          <?php
-          $realized_metall = [
-            ['how' => '440', 'wht' => 'шт', 'subtitle' => 'Колесные пары (СОНК, НОНК)'],
-            ['how' => '874', 'wht' => 'шт', 'subtitle' => 'Цельнокатаные колеса'],
-            ['how' => '656', 'wht' => 'тонн', 'subtitle' => 'Запчасти на грузовые вагоны'],
-            ['how' => '32', 'wht' => 'тонны', 'subtitle' => 'Запчасти на локомотивы'],
-            ['how' => '134', 'wht' => 'лица (юр и физ)', 'subtitle' => 'Довольных клиентов'],
-          ];
-          for ($i = 0; $i < count($realized_metall); $i++) :
-          ?>
-            <div class="pb-8 border-b-4 border-[color:var(--blue-2)]">
 
-              <div class="text-[color:var(--blue-2)] xl:text-center">
-                <span class="text-[80px] font-black leading-[110%] xl:text-[64px]"><?= $realized_metall[$i]['how'] ?></span>
-                <span class="font-semibold text-[24px] leading-[110%]"><?= $realized_metall[$i]['wht'] ?></span>
-              </div>
+          <div class="pb-8 border-b-4 border-[color:var(--blue-2)]">
 
-              <p class="font-semibold text-[14px] leading-[110%] xl:text-center text-[color:var(--dark)] mt-4"> <?= $realized_metall[$i]['subtitle'] ?></p>
-
-
+            <div class="text-[color:var(--blue-2)] xl:text-center">
+              <span class="text-[80px] font-black leading-[110%] xl:text-[64px]"> 440 </span>
+              <span class="font-semibold text-[24px] leading-[110%]"> шт </span>
             </div>
-          <?php endfor; ?>
+
+            <p class="font-semibold text-[14px] leading-[110%] xl:text-center text-[color:var(--dark)] mt-4">
+              Колесные пары (СОНК, НОНК)
+            </p>
+
+          </div>
+
+
+          <div class="pb-8 border-b-4 border-[color:var(--blue-2)]">
+
+            <div class="text-[color:var(--blue-2)] xl:text-center">
+              <span class="text-[80px] font-black leading-[110%] xl:text-[64px]"> 874 </span>
+              <span class="font-semibold text-[24px] leading-[110%]"> шт </span>
+            </div>
+
+            <p class="font-semibold text-[14px] leading-[110%] xl:text-center text-[color:var(--dark)] mt-4">
+              Цельнокатаные колеса
+            </p>
+
+          </div>
+
+          <div class="pb-8 border-b-4 border-[color:var(--blue-2)]">
+
+            <div class="text-[color:var(--blue-2)] xl:text-center">
+              <span class="text-[80px] font-black leading-[110%] xl:text-[64px]"> 656 </span>
+              <span class="font-semibold text-[24px] leading-[110%]"> тонн </span>
+            </div>
+
+            <p class="font-semibold text-[14px] leading-[110%] xl:text-center text-[color:var(--dark)] mt-4">
+              Запчасти на грузовые вагоны
+            </p>
+
+          </div>
+
+
+
+
+
+          <div class="pb-8 border-b-4 border-[color:var(--blue-2)]">
+
+            <div class="text-[color:var(--blue-2)] xl:text-center">
+              <span class="text-[80px] font-black leading-[110%] xl:text-[64px]"> 32 </span>
+              <span class="font-semibold text-[24px] leading-[110%]"> тонны </span>
+            </div>
+
+            <p class="font-semibold text-[14px] leading-[110%] xl:text-center text-[color:var(--dark)] mt-4">
+              Запчасти на локомотивы
+            </p>
+
+          </div>
+
+
+          <div class="pb-8 border-b-4 border-[color:var(--blue-2)]">
+
+            <div class="text-[color:var(--blue-2)] xl:text-center">
+              <span class="text-[80px] font-black leading-[110%] xl:text-[64px]"> 134 </span>
+              <span class="font-semibold text-[24px] leading-[110%]"> лица (юр и физ) </span>
+            </div>
+
+            <p class="font-semibold text-[14px] leading-[110%] xl:text-center text-[color:var(--dark)] mt-4">
+              Довольных клиентов
+            </p>
+
+          </div>
+
+
+
+
+
+
 
         </div>
       </div>
@@ -307,24 +404,18 @@
 
     <section class="relative mt-[175px]">
       <div class="absolute right-0 top-1/2 -translate-y-1/2 max-w-5xl 2xl:hidden"> <img src="./assets/img/main//pre-footer-tematic.png" alt=""> </div>
-      <?php
-      $list_benefits = [
-        'Выгодное ценообразование',
-        'Широкий ассортимент товаров',
-        'Репутация на рынке с 2013 года',
-        'Возможность доставки «под ключ»',
-        'Система лояльности постоянным клиентам',
-        'Различные варианты условий поставки и покупки',
-        'Услуги по подготовке и мелкому ремонту запчастей',
-      ]
-      ?>
+
       <div class="container">
         <div>
           <h3 class="heading"> Наши преимущества </h3>
           <ul class="list-disc list-inside marker:text-[color:var(--blue-2)] marker:text-2xl flex flex-col gap-y-8 mt-24">
-            <?php for ($i = 0; $i < count($list_benefits); $i++) : ?>
-              <li class=""> <?= $list_benefits[$i] ?> </li>
-            <?php endfor; ?>
+            <li> Выгодное ценообразование </li>
+            <li> Широкий ассортимент товаров </li>
+            <li> Репутация на рынке с 2013 года </li>
+            <li> Возможность доставки «под ключ» </li>
+            <li> Система лояльности постоянным клиентам </li>
+            <li> Различные варианты условий поставки и покупки </li>
+            <li> Услуги по подготовке и мелкому ремонту запчастей </li>
           </ul>
         </div>
       </div>
@@ -403,6 +494,10 @@
 
 
   </main>
+
+  <footer class="h-[88px] flex justify-center items-center bg-[#E5E5E5] text-[12px] leading-[107%]">
+    © 2022 ООО «КПС»
+  </footer>
 
 </body>
 
