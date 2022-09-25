@@ -13,10 +13,10 @@
   @apply outline outline-1 outline-orange-800;
 } */
 .container {
-  @apply font-['inter'] max-w-[calc(1128px+16px)] mx-auto px-2;
+  @apply font-['inter'] max-w-[calc(1128px+16px)] mx-auto px-[16px];
 }
 .heading {
-  @apply font-black text-[36px] leading-[110%] text-[color:var(--dark)];
+  @apply font-black text-[36px] leading-[110%] text-[color:var(--dark)] xl:text-[32px];
 }
 .diller-active {
   @apply h-min font-medium text-[14px] leading-[17px] py-3 px-4 text-white bg-[color:var(--blue-2)] rounded-full active:scale-95 transition-transform;
