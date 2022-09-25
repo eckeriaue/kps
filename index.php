@@ -308,9 +308,49 @@
 
 
 
-    <section class="bg-[color:var(--blue)] mt-96 rounded-t-[56px] pt-80">
+    <section class="bg-[color:var(--blue)] mt-96 rounded-t-[56px] pt-80 pb-[calc(76px+56px)]">
+      <div class="container flex items-center justify-between">
+      <div>
+        <p class="mb-24 text-white font-black text-[36px] leading-[110%]"> Связаться с нами </p>
+          <form action="./index.php" method="POST">
+            <div class="flex flex-col gap-y-8 mb-12">
+              <input class="bg-[#3C58A0] px-10 py-3 text-white border-b border-white " type="text" placeholder="Имя" >
+              <input class="bg-[#3C58A0] px-10 py-3 text-white border-b border-white " type="text" placeholder="Почтовый ящик" >
+              <input class="bg-[#3C58A0] px-10 py-3 text-white border-b border-white " type="text" placeholder="Телефон" >
+            </div>
+            <button type="submit" class="w-full bg-white rounded-full text-[color:var(--blue-2)] text-center py-4" > Отправить </button>
+          </form>
+        </div>
+        
+        
+        <div id="map" class="w-[456px]">
+
+              <p class="mb-24 text-white font-black text-[36px] leading-[110%]"> Контакты компании </p>
+              <div>
+                <div class="rounded-[24px] overflow-hidden">
+                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A806805da0c81fe4959e9f83ca05ab2dffad41806d0bf221c944c3df9a81c3ea2&amp;width=100%25&amp;height=280&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <p class="text-[14px] text-white leading-[130%] my-8"> 
+                Челябинская область, п. Новый Кременкуль, ул. Центральная, д. 1, этаж 3  
+                </p>
+                <div class="text-[14px] text-white leading-[130%] flex gap-x-16">
+                  <p> <a class="flex items-center gap-x-2" href="tel:+79320150606"> <img src="./assets/img/social/phone-white.svg" alt="иконка телефона"> +7 (932) 015-06-06 </a> </p> 
+                  <p> <a class="flex items-center gap-x-2" href="mailto:kps74@inbox.ru"> <img src="./assets/img/social/mail-white.svg" alt="иконка письма"> kps74@inbox.ru </a> </p> 
+                </div>
+              </div>
+
+
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <section>
       <div class="container"></div>
     </section>
+
 
   </main>
 
