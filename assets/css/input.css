@@ -15,3 +15,6 @@
 .container {
   @apply font-['inter'] max-w-[calc(1128px+16px)] mx-auto px-2;
 }
+.heading {
+  @apply font-black text-[36px] leading-[110%] text-[color:var(--dark)];
+}
