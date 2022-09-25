@@ -228,7 +228,7 @@
 
           for ($i = 0; $i < count($catalog_layout); $i++) : ?>
 
-            <div class="border-2 border-[color:var(--blue-2)] flex flex-col justify-between rounded-[24px] p-8">
+            <div class="border-2 border-[color:var(--blue-2)] flex flex-col justify-between gap-y-3 rounded-[24px] p-8">
 
               <div class="w-[222px] mx-auto">
                 <img class="w-full" src="<?= $catalog_layout[$i]['img'] ?>" alt="<?= $catalog_layout[$i]['img'] ?>">
@@ -246,6 +246,51 @@
       </div>
     </section>
 
+
+
+    <section class="mt-[152px]">
+      <div class="container">
+        <div class="grid grid-cols-3 grid-rows-2 gap-8">
+          <h3 class="heading"> Реализованные запчасти </h3>
+            
+            <?php
+            $realized_metall = [
+              ['how' => '440', 'wht' => 'шт', 'subtitle' => 'Колесные пары (СОНК, НОНК)'],
+              ['how' => '874', 'wht' => 'шт', 'subtitle' => 'Цельнокатаные колеса'],
+              ['how' => '656', 'wht' => 'тонн', 'subtitle' => 'Запчасти на грузовые вагоны'],
+              ['how' => '32', 'wht' => 'тонны', 'subtitle' => 'Запчасти на локомотивы'],
+              ['how' => '134', 'wht' => 'лица (юр и физ)', 'subtitle' => 'Довольных клиентов'],
+            ];
+            for ($i = 0; $i < count($realized_metall); $i++) :
+            ?>
+            <div class="pb-8 border-b-4 border-[color:var(--blue-2)]">
+              
+              <div class="text-[color:var(--blue-2)]">
+                <span class="text-[80px] font-black leading-[110%]"><?= $realized_metall[$i]['how'] ?></span>
+                <span class="font-semibold text-[24px] leading-[110%]"><?= $realized_metall[$i]['wht'] ?></span>
+              </div>
+
+              <p class="font-semibold text-[14px] leading-[110%] text-[color:var(--dark)] mt-4"> <?= $realized_metall[$i]['subtitle'] ?></p>
+
+
+            </div>
+            <?php endfor; ?>
+          
+        </div>
+      </div>
+    </section>
+
+
+    <section class="mt-[175px]">
+      <div class="container">
+        <div>
+          <h3 class="heading">  Наши преимущества  </h3>
+          <ul>
+            
+          </ul>
+        </div>
+      </div>
+    </section>
 
   </main>
 
