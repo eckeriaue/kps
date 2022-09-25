@@ -281,15 +281,35 @@
     </section>
 
 
-    <section class="mt-[175px]">
+    <section class="relative mt-[175px]">
+      <div class="absolute right-0 top-1/2 -translate-y-1/2 max-w-5xl"> <img src="./assets/img/main//pre-footer-tematic.png" alt=""> </div>
+      <?php
+      $list_benefits = [
+        'Выгодное ценообразование',
+        'Широкий ассортимент товаров',
+        'Репутация на рынке с 2013 года', 
+        'Возможность доставки «под ключ»', 
+        'Система лояльности постоянным клиентам', 
+        'Различные варианты условий поставки и покупки', 
+        'Услуги по подготовке и мелкому ремонту запчастей', 
+      ]
+      ?>
       <div class="container">
         <div>
           <h3 class="heading">  Наши преимущества  </h3>
-          <ul>
-            
+          <ul class="list-disc list-inside marker:text-[color:var(--blue-2)] marker:text-2xl flex flex-col gap-y-8 mt-24">
+            <?php for ($i = 0; $i < count($list_benefits); $i++): ?>
+              <li class=""> <?= $list_benefits[$i] ?> </li>
+            <?php endfor; ?>
           </ul>
         </div>
       </div>
+    </section>
+
+
+
+    <section class="bg-[color:var(--blue)] mt-96 rounded-t-[56px] pt-80">
+      <div class="container"></div>
     </section>
 
   </main>

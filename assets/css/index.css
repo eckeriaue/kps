@@ -651,6 +651,10 @@ video {
   margin-top: 175px;
 }
 
+.mt-96{
+  margin-top: 100px;
+}
+
 .block{
   display: block;
 }
@@ -715,6 +719,10 @@ video {
   max-width: 516px;
 }
 
+.max-w-5xl{
+  max-width: 64rem;
+}
+
 .-translate-y-1\/2{
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -726,6 +734,14 @@ video {
 
 .resize{
   resize: both;
+}
+
+.list-inside{
+  list-style-position: inside;
+}
+
+.list-disc{
+  list-style-type: disc;
 }
 
 .grid-cols-2{
@@ -810,6 +826,18 @@ video {
   row-gap: 12px;
 }
 
+.gap-y-12{
+  row-gap: 32px;
+}
+
+.gap-y-9{
+  row-gap: 2.25rem;
+}
+
+.gap-y-8{
+  row-gap: 24px;
+}
+
 .truncate{
   overflow: hidden;
   text-overflow: ellipsis;
@@ -826,6 +854,10 @@ video {
 
 .rounded{
   border-radius: 0.25rem;
+}
+
+.rounded-\[56px\]{
+  border-radius: 56px;
 }
 
 .rounded-t-\[56px\]{
@@ -1107,6 +1139,24 @@ video {
   font-weight: 900;
   line-height: 110%;
   color: var(--dark);
+}
+
+.marker\:text-2xl *::marker{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.marker\:text-\[color\:var\(--blue-2\)\] *::marker{
+  color: var(--blue-2);
+}
+
+.marker\:text-2xl::marker{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.marker\:text-\[color\:var\(--blue-2\)\]::marker{
+  color: var(--blue-2);
 }
 
 .before\:absolute::before{
