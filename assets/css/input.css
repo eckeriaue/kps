@@ -18,3 +18,6 @@
 .heading {
   @apply font-black text-[36px] leading-[110%] text-[color:var(--dark)];
 }
+.diller-active {
+  @apply h-min font-medium text-[14px] leading-[17px] py-3 px-4 text-white bg-[color:var(--blue-2)] rounded-full active:scale-95 transition-transform;
+}

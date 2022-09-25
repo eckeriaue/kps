@@ -41,8 +41,9 @@ module.exports = {
   
       screens: {
 
-        "2xl": { "max": "1920px" },
-        "xl": { "max": "1140px" },
+        "3xl": { "max": "1920px" },
+        "2xl": { "max": "1280px" },
+        "xl": { "max": "1024px" },
         "lg": { "max": "768px" },
         "md": { "max": "539px" },
         "sm": { "max": "360px" },

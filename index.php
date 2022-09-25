@@ -18,13 +18,13 @@
 
       <div>
         <a href="/" class="flex items-center gap-x-3 text-[color:var(--blue)]
-      font-semibold text-lg leading-[22px]">
+      font-semibold text-lg leading-[22px] whitespace-nowrap">
           <img src="./assets/img/logo.png" alt="logo">
           <h1> ООО «КПС» </h1>
         </a>
       </div>
 
-      <div>
+      <div class="xl:hidden">
         <?php
         $menu = [
           'Главная', 'Каталог', 'Партнерство', 'Контакты'
@@ -45,7 +45,7 @@
 
       <div class="flex items-center gap-x-4">
         <span>
-          <a href="tel:+79320150606" class="flex gap-x-2 items-center text-[12px]">
+          <a href="tel:+79320150606" class="flex gap-x-2 items-center whitespace-nowrap text-[12px]">
             <img src="./assets/img/social/phone.svg" alt="phone">
             +7 (932) 015-06-06
           </a>
@@ -63,6 +63,7 @@
           Оставить заявку
         </button>
 
+        <button class="hidden xl:block"></button>
       </div>
 
     </menu>
@@ -78,7 +79,7 @@
 
   <main>
     <section class="mt-[177px] relative">
-      <div class="absolute right-0 top-1/2 -translate-y-1/2 -z-[1]">
+      <div class="absolute right-0 top-1/2 -translate-y-1/2 -z-[1] 2xl:max-w-[40vw] lg:hidden">
         <img src="./assets/img/main-img-top-content.png" alt="вагон">
       </div>
       <div class="container">
@@ -309,21 +310,21 @@
 
 
     <section class="bg-[color:var(--blue)] mt-96 rounded-t-[56px] pt-80 pb-[calc(76px+56px)]">
-      <div class="container flex items-center justify-between">
-      <div>
+      <div class="container flex items-center justify-between gap-x-44">
+      <div class="w-1/2">
         <p class="mb-24 text-white font-black text-[36px] leading-[110%]"> Связаться с нами </p>
           <form action="./index.php" method="POST">
             <div class="flex flex-col gap-y-8 mb-12">
-              <input class="bg-[#3C58A0] px-10 py-3 text-white border-b border-white " type="text" placeholder="Имя" >
-              <input class="bg-[#3C58A0] px-10 py-3 text-white border-b border-white " type="text" placeholder="Почтовый ящик" >
-              <input class="bg-[#3C58A0] px-10 py-3 text-white border-b border-white " type="text" placeholder="Телефон" >
+              <input class="bg-[#3C58A0] w-full px-10 py-3 text-white border-b border-white " type="text" placeholder="Имя" >
+              <input class="bg-[#3C58A0] w-full px-10 py-3 text-white border-b border-white " type="text" placeholder="Почтовый ящик" >
+              <input class="bg-[#3C58A0] w-full px-10 py-3 text-white border-b border-white " type="text" placeholder="Телефон" >
             </div>
             <button type="submit" class="w-full bg-white rounded-full text-[color:var(--blue-2)] text-center py-4" > Отправить </button>
           </form>
         </div>
         
         
-        <div id="map" class="w-[456px]">
+        <div id="map" class="w-1/2">
 
               <p class="mb-24 text-white font-black text-[36px] leading-[110%]"> Контакты компании </p>
               <div>
@@ -347,8 +348,33 @@
     </section>
 
 
-    <section>
-      <div class="container"></div>
+    <section class="bg-white -mt-32 pt-80 rounded-t-[56px] pb-56  ">
+      <div class="container">
+        <h3 class="heading text-center pb-24"> Наши дилеры </h3>
+        
+        
+        <div class="flex justify-between gap-x-44">
+          <div class="flex flex-wrap w-1/2">
+
+              <button class="diller-active"> Республика Казахстан </button>
+          </div>
+          <div class="w-1/2">
+            <div class="rounded-[24px] overflow-hidden">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A806805da0c81fe4959e9f83ca05ab2dffad41806d0bf221c944c3df9a81c3ea2&amp;width=100%25&amp;height=280&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <p class="text-[14px] text-[color:var(--dark)] leading-[130%] my-8">
+            Республика Казахстан, Костанайская область,г. Рудный, улица Топоркова, д.7, офис. 310  
+            </p>
+            <div class="text-[14px] text-[color:var(--dark)] leading-[130%] flex flex-wrap gap-x-16 gap-y-3">
+              <p> <a class="flex items-center gap-x-2 whitespace-nowrap" href="tel:+77773722089"> <img src="./assets/img/social/phone.svg" alt="иконка телефона"> +7 (777) 372-20-89 </a> </p> 
+              <p> <a class="flex items-center gap-x-2 whitespace-nowrap" href="tel:+77051939931"> <img src="./assets/img/social/phone.svg" alt="иконка телефона"> +7 (705) 193-99-31 </a> </p> 
+              <p> <a class="flex items-center gap-x-2 whitespace-nowrap" href="mailto:kps74@inbox.ru"> <img src="./assets/img/social/mail.svg" alt="иконка письма"> kps74@inbox.ru </a> </p> 
+            </div>
+          </div>
+        </div>
+        
+      
+      </div>
     </section>
 
 
