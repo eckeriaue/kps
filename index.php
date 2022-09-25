@@ -35,9 +35,9 @@
         <?php
         $menu = [
           'Главная', 'Каталог', 'Партнерство', 'Контакты'
-        ]
+        ];
         ?>
-        <span class="open-window text-xl cursor-pointer"> &times; </span>
+        <span class="open-window text-xl cursor-pointer hidden xl:block"> &times; </span>
         <ul class="flex items-center h-full xl:flex-col xl:gap-y-10 gap-x-14">
           <?php for ($i = 0; $i < count($menu); $i++) : ?>
             <li>
