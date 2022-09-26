@@ -38,12 +38,12 @@
 
 
           <li>
-            <a href="#" class="hover:text-[color:var(--blue-2)] transition-colors h-full block">
+            <a href="/" class="hover:text-[color:var(--blue-2)] transition-colors h-full block">
               Главная
             </a>
           </li>
           <li>
-            <a href="#" class="hover:text-[color:var(--blue-2)] transition-colors h-full block">
+            <a href="http://kps174.ru/index.php?id=33" class="hover:text-[color:var(--blue-2)] transition-colors h-full block">
               Каталог
             </a>
           </li>
@@ -495,11 +495,6 @@
 
   </main>
 
-  <footer class="h-[88px] flex justify-center items-center bg-[#E5E5E5] text-[12px] leading-[107%]">
-    © 2022 ООО «КПС»
-  </footer>
-
-
   <div id="modals" class="transition-all fixed top-0 left-0 w-full h-full z-20   opacity-0 pointer-events-none invisible">
     <div class="relative open-window flex items-center justify-center w-full h-full before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black before:opacity-75 before:backdrop-blur-xl">
 
@@ -525,6 +520,13 @@
 
     </div>
   </div>
+
+
+  <footer class="h-[88px] flex justify-center items-center bg-[#E5E5E5] text-[12px] leading-[107%]">
+    © 2022 ООО «КПС»
+  </footer>
+
+
 
 </body>
 
