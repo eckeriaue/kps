@@ -428,11 +428,11 @@
 
         <div class="w-1/2 lg:w-full lg:mb-8">
           <p class="mb-24 text-white font-black text-[36px] leading-[110%]"> Связаться с нами </p>
-          <form action="./index.php" method="POST">
+          <form action="./handlers/send.php" method="POST">
             <div class="flex flex-col gap-y-8 mb-12">
-              <input class="bg-[#3C58A0] w-full px-10 py-3 text-white border-b border-white " type="text" placeholder="Имя">
-              <input class="bg-[#3C58A0] w-full px-10 py-3 text-white border-b border-white " type="text" placeholder="Почтовый ящик">
-              <input class="bg-[#3C58A0] w-full px-10 py-3 text-white border-b border-white " type="text" placeholder="Телефон">
+              <input name="name" class="bg-[#3C58A0] w-full px-10 py-3 text-white border-b border-white " type="text" placeholder="Имя">
+              <input name="email" class="bg-[#3C58A0] w-full px-10 py-3 text-white border-b border-white " type="text" placeholder="Почтовый ящик">
+              <input name="phone" class="bg-[#3C58A0] w-full px-10 py-3 text-white border-b border-white " type="text" placeholder="Телефон">
             </div>
             <button type="submit" class="w-full bg-white rounded-full text-[color:var(--blue-2)] text-center py-4"> Отправить </button>
           </form>
@@ -511,11 +511,11 @@
 
 
         </div>
-        <form action="./index.php" method="POST">
+        <form action="./handlers/send.php" method="POST">
           <div class="flex flex-col gap-y-8 py-24">
-            <input class="bg-transparent w-full px-10 py-3 text-[color:var(--dark)] border-b border-[color:var(--dark)] " type="text" placeholder="Имя">
-            <input class="bg-transparent w-full px-10 py-3 text-[color:var(--dark)] border-b border-[color:var(--dark)] " type="text" placeholder="Почтовый ящик">
-            <input class="bg-transparent w-full px-10 py-3 text-[color:var(--dark)] border-b border-[color:var(--dark)] " type="text" placeholder="Телефон">
+            <input name="name" class="bg-transparent w-full px-10 py-3 text-[color:var(--dark)] border-b border-[color:var(--dark)] " type="text" placeholder="Имя">
+            <input name="email" class="bg-transparent w-full px-10 py-3 text-[color:var(--dark)] border-b border-[color:var(--dark)] " type="text" placeholder="Почтовый ящик">
+            <input name="phone" class="bg-transparent w-full px-10 py-3 text-[color:var(--dark)] border-b border-[color:var(--dark)] " type="text" placeholder="Телефон">
           </div>
           <button type="submit" class="w-full bg-[color:var(--blue-2)] rounded-full text-white text-center py-4"> Отправить </button>
         </form>
