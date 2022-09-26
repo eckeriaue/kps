@@ -22,7 +22,6 @@ for (let index = 0; index < openWindow.length; index++) {
       blur.classList.toggle('pointer-events-none')
       blur.classList.toggle('invisible')
       modalForm.classList.toggle('scale-75')
-      console.log('test')
     })
   }
   modalForm.addEventListener('click', e => {
