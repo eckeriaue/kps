@@ -84,7 +84,7 @@
         <a class="lg:hidden" href="#"><img src="./assets/img/social/telegram.svg" alt="telegram"></a>
 
 
-        <button class="
+        <button class=" open-window
           px-8 h-[56px] text-white bg-[color:var(--blue-2)]
           text-center rounded-full
           active:scale-95 transition-transform
@@ -146,7 +146,7 @@
 
         <div class="mt-[120px] max-w-[552px] grid grid-cols-2 gap-x-8 ">
           <!-- md:flex-col md:gap-y-8 md:gap-x-0 -->
-          <button class="
+          <button class=" open-window
           px-8 h-[56px] text-white bg-[color:var(--blue-2)]
           text-center rounded-full
           active:scale-95 transition-transform
@@ -498,6 +498,17 @@
   <footer class="h-[88px] flex justify-center items-center bg-[#E5E5E5] text-[12px] leading-[107%]">
     © 2022 ООО «КПС»
   </footer>
+
+
+  <div id="modals" class="fixed top-0 left-0 w-full h-full z-20">
+    <div class="relative w-full h-full before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black before:opacity-75 before:backdrop-blur-xl">
+
+
+
+
+
+    </div>
+  </div>
 
 </body>
 
