@@ -500,10 +500,11 @@
   </footer>
 
 
-  <div id="modals" class="fixed top-0 left-0 w-full h-full z-20">
-    <div class="relative w-full h-full before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black before:opacity-75 before:backdrop-blur-xl">
+  <div id="modals" class="fixed top-0 left-0 w-full h-full z-20 pointer-events-none">
+    <div class="relative flex items-center justify-center w-full h-full before:absolute before:top-0 before:left-0 before:w-full pointer-events-auto before:h-full before:bg-black before:opacity-75 before:backdrop-blur-xl">
 
 
+    <div class="bg-white p-4 rounded-[56px]"></div>
 
 
 

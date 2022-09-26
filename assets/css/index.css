@@ -557,6 +557,14 @@ video {
   width: 100%;
 }
 
+.pointer-events-none{
+  pointer-events: none;
+}
+
+.pointer-events-auto{
+  pointer-events: auto;
+}
+
 .visible{
   visibility: visible;
 }
@@ -911,6 +919,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-\[56px\]{
+  border-radius: 56px;
+}
+
 .rounded-t-\[56px\]{
   border-top-left-radius: 56px;
   border-top-right-radius: 56px;
@@ -974,6 +986,10 @@ video {
 
 .p-8{
   padding: 24px;
+}
+
+.p-4{
+  padding: 16px;
 }
 
 .px-8{
