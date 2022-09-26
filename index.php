@@ -426,7 +426,7 @@
     <section class="bg-[color:var(--blue)] mt-96 rounded-t-[56px] pt-80 pb-[calc(76px+56px)]">
       <div class="container flex justify-between gap-x-44 lg:flex-col">
 
-        <div class="w-1/2 lg:w-full">
+        <div class="w-1/2 lg:w-full lg:mb-8">
           <p class="mb-24 text-white font-black text-[36px] leading-[110%]"> Связаться с нами </p>
           <form action="./index.php" method="POST">
             <div class="flex flex-col gap-y-8 mb-12">
@@ -500,11 +500,26 @@
   </footer>
 
 
-  <div id="modals" class="fixed top-0 left-0 w-full h-full z-20 pointer-events-none">
-    <div class="relative flex items-center justify-center w-full h-full before:absolute before:top-0 before:left-0 before:w-full pointer-events-auto before:h-full before:bg-black before:opacity-75 before:backdrop-blur-xl">
+  <div id="modals" class="transition-all fixed top-0 left-0 w-full h-full z-20   opacity-0 pointer-events-none invisible">
+    <div class="relative open-window flex items-center justify-center w-full h-full before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black before:opacity-75 before:backdrop-blur-xl">
 
 
-    <div class="bg-white p-4 rounded-[56px]"></div>
+      <div class="modal-form w-1/2 lg:w-4/5 bg-white p-12 rounded-[56px] z-[30] scale-75 transition-transform">
+        <div class="heading flex justify-between">
+          <p>Свяжитесь с нами</p> <span class="font-normal open-window cursor-pointer"> &times; </span>
+
+
+
+        </div>
+        <form action="./index.php" method="POST">
+          <div class="flex flex-col gap-y-8 py-24">
+            <input class="bg-transparent w-full px-10 py-3 text-[color:var(--dark)] border-b border-[color:var(--dark)] " type="text" placeholder="Имя">
+            <input class="bg-transparent w-full px-10 py-3 text-[color:var(--dark)] border-b border-[color:var(--dark)] " type="text" placeholder="Почтовый ящик">
+            <input class="bg-transparent w-full px-10 py-3 text-[color:var(--dark)] border-b border-[color:var(--dark)] " type="text" placeholder="Телефон">
+          </div>
+          <button type="submit" class="w-full bg-[color:var(--blue-2)] rounded-full text-white text-center py-4"> Отправить </button>
+        </form>
+      </div>
 
 
 
